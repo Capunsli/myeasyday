@@ -1,5 +1,5 @@
 class VisitorsController < ApplicationController
-  before_action :set_visitor, only: [:show, :edit, :update, :destroy]
+  before_action :set_visitor, only: [:show, :edit, :update, :destroy, :question]
 
   # GET /visitors
   # GET /visitors.json
@@ -19,6 +19,9 @@ class VisitorsController < ApplicationController
 
   # GET /visitors/1/edit
   def edit
+  end
+
+  def question
   end
 
   # POST /visitors
