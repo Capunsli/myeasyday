@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tueftler:</strong>
+  <%= @itinerary.tueftler %>
+</p>
+
+<p>
+  <strong>Trendsetter:</strong>
+  <%= @itinerary.trendsetter %>
+</p>
+
+<p>
+  <strong>Bodenstaendige:</strong>
+  <%= @itinerary.bodenstaendige %>
+</p>
+
+<%= link_to 'Edit', edit_itinerary_path(@itinerary) %> |
+<%= link_to 'Back', itineraries_path %>

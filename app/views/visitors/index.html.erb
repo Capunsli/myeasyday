@@ -1,0 +1,45 @@
+<h1>Listing visitors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Title</th>
+      <th>Address</th>
+      <th>Zip</th>
+      <th>City</th>
+      <th>E-mail</th>
+      <th>Company</th>
+      <th>Question1</th>
+      <th>Question2</th>
+      <th>Question3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visitors.each do |visitor| %>
+      <tr>
+        <td><%= visitor.firstname %></td>
+        <td><%= visitor.lastname %></td>
+        <td><%= visitor.title %></td>
+        <td><%= visitor.address %></td>
+        <td><%= visitor.zip %></td>
+        <td><%= visitor.city %></td>
+        <td><%= visitor.e-mail %></td>
+        <td><%= visitor.company %></td>
+        <td><%= visitor.question1 %></td>
+        <td><%= visitor.question2 %></td>
+        <td><%= visitor.question3 %></td>
+        <td><%= link_to 'Show', visitor %></td>
+        <td><%= link_to 'Edit', edit_visitor_path(visitor) %></td>
+        <td><%= link_to 'Destroy', visitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Visitor', new_visitor_path %>

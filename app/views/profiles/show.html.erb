@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tueftler:</strong>
+  <%= @profile.tueftler %>
+</p>
+
+<p>
+  <strong>Trendsetter:</strong>
+  <%= @profile.trendsetter %>
+</p>
+
+<p>
+  <strong>Bodenstaendige:</strong>
+  <%= @profile.bodenstaendige %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
