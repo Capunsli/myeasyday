@@ -18,7 +18,7 @@ class VisitorsControllerTest < ActionController::TestCase
 
   test "should create visitor" do
     assert_difference('Visitor.count') do
-      post :create, visitor: { address: @visitor.address, city: @visitor.city, company: @visitor.company, e-mail: @visitor.e-mail, firstname: @visitor.firstname, lastname: @visitor.lastname, question1: @visitor.question1, question2: @visitor.question2, question3: @visitor.question3, title: @visitor.title, zip: @visitor.zip }
+      post :create, visitor: { address: @visitor.address, city: @visitor.city, company: @visitor.company, email: @visitor.email, firstname: @visitor.firstname, lastname: @visitor.lastname, question1: @visitor.question1, question2: @visitor.question2, question3: @visitor.question3, title: @visitor.title, zip: @visitor.zip }
     end
 
     assert_redirected_to visitor_path(assigns(:visitor))
@@ -35,7 +35,7 @@ class VisitorsControllerTest < ActionController::TestCase
   end
 
   test "should update visitor" do
-    patch :update, id: @visitor, visitor: { address: @visitor.address, city: @visitor.city, company: @visitor.company, e-mail: @visitor.e-mail, firstname: @visitor.firstname, lastname: @visitor.lastname, question1: @visitor.question1, question2: @visitor.question2, question3: @visitor.question3, title: @visitor.title, zip: @visitor.zip }
+    patch :update, id: @visitor, visitor: { address: @visitor.address, city: @visitor.city, company: @visitor.company, email: @visitor.email, firstname: @visitor.firstname, lastname: @visitor.lastname, question1: @visitor.question1, question2: @visitor.question2, question3: @visitor.question3, title: @visitor.title, zip: @visitor.zip }
     assert_redirected_to visitor_path(assigns(:visitor))
   end
 
